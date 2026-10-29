@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+:root { font-family: 'DM Sans', sans-serif; color: #172b36; background: #f3f7f7; font-synthesis: none; text-rendering: optimizeLegibility; }
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; }
+button, input, select { font: inherit; }
+button { cursor: pointer; }
+.barra-superior { min-height: 78px; padding: 0 5.5%; background: #fff; border-bottom: 1px solid #e4eceb; display: flex; justify-content: space-between; align-items: center; gap: 15px; }
+.marca { display: flex; align-items: center; gap: 12px; color: inherit; text-decoration: none; }
+.marca-icono { display: grid; place-items: center; background: #d9f4ed; color: #0f766e; width: 45px; height: 45px; border-radius: 14px; }
+.marca strong { display: block; font: 800 18px Manrope, sans-serif; }
+.marca small { display: block; margin-top: 3px; color: #7b8d92; font-size: 12px; }
+.enlace-nav { display: flex; align-items: center; gap: 8px; color: #0f766e; text-decoration: none; font-weight: 700; font-size: 14px; }
+.contenedor { width: min(1450px, 90%); margin: 34px auto 0; }
+.bienvenida { display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px; gap: 15px; }
+.etiqueta { font-size: 11px; letter-spacing: 1.8px; font-weight: 800; color: #0f8b7b; }
+h1, h2, p { margin-top: 0; }
+h1 { font: 800 clamp(25px, 3vw, 34px) Manrope, sans-serif; letter-spacing: -1.2px; margin: 8px 0; }
+.bienvenida p, .panel-cabecera p { color: #7b8d92; margin-bottom: 0; font-size: 14px; }
+.icono-grande { display: grid; place-items: center; width: 65px; height: 65px; border-radius: 20px; color: #0f766e; background: #d9f4ed; }
+.estadisticas { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-bottom: 22px; }
+.tarjeta-estadistica { display: flex; align-items: center; gap: 15px; padding: 22px; background: #fff; border: 1px solid #e6eeed; border-radius: 16px; box-shadow: 0 4px 18px #183e3a08; min-width: 0; }
+.estadistica-icono { width: 45px; height: 45px; border-radius: 13px; display: grid; place-items: center; flex-shrink: 0; }
+.verde { background: #d9f4ed; color: #0f766e; } .azul { background: #e0edff; color: #3674bd; } .naranja { background: #fff0dc; color: #c77a17; }
+.tarjeta-estadistica span { display: block; color: #7b8d92; font-size: 12px; margin-bottom: 5px; }
+.tarjeta-estadistica strong { font: 800 21px Manrope, sans-serif; overflow-wrap: anywhere; }
+.contenido { display: grid; grid-template-columns: minmax(0, 1.8fr) minmax(290px, .9fr); gap: 20px; align-items: start; }
+.panel { background: white; border: 1px solid #e5edec; border-radius: 17px; box-shadow: 0 4px 18px #183e3a08; overflow: hidden; min-width: 0; }
+.panel-cabecera { display: flex; justify-content: space-between; gap: 15px; align-items: center; padding: 22px 22px 18px; }
+.panel h2, .formulario h2 { font: 800 19px Manrope, sans-serif; margin-bottom: 6px; }
+.panel-cabecera p { font-size: 12px; }
+.boton { display: inline-flex; align-items: center; justify-content: center; gap: 7px; padding: 10px 14px; border: 0; border-radius: 10px; font-size: 13px; font-weight: 700; }
+.principal { background: #0f766e; color: white; } .principal:hover { background: #0a615b; }
+.secundario { background: #eef5f4; color: #35535a; } .secundario:hover { background: #e1eeeb; }
+.buscador { margin: 0 22px 16px; display: flex; gap: 10px; align-items: center; background: #f7f9f9; border: 1px solid #e5eceb; border-radius: 10px; padding: 0 12px; color: #91a2a5; }
+.buscador input { border: 0; outline: 0; background: transparent; padding: 12px 0; width: 100%; color: #172b36; font-size: 13px; }
+.tabla-contenedor { width: 100%; overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; text-align: left; font-size: 12px; }
+th { color: #829397; font-size: 10px; text-transform: uppercase; letter-spacing: .7px; font-weight: 800; background: #fbfcfc; }
+th, td { padding: 14px 15px; border-top: 1px solid #edf1f1; white-space: nowrap; }
+th:first-child, td:first-child { padding-left: 22px; }
+td strong { display: block; font-size: 12px; }
+td small { display: block; color: #8a9a9e; font-size: 10px; margin-top: 4px; max-width: 220px; overflow: hidden; text-overflow: ellipsis; }
+.categoria { background: #eff6f4; border-radius: 7px; padding: 5px 7px; color: #49716a; font-size: 10px; }
+.stock { background: #e0f6e9; color: #19764b; border-radius: 7px; padding: 5px 9px; font-weight: 800; }
+.stock.bajo { background: #fff0db; color: #a85e09; }
+.acciones-tabla { display: flex; gap: 6px; }
+.icono-boton { width: 30px; height: 30px; display: grid; place-items: center; border: 0; border-radius: 8px; }
+.editar { background: #eaf2ff; color: #3d73bd; } .borrar { background: #fff0ef; color: #c84d49; }
+.estado { padding: 22px; color: #7b8d92; text-align: center; font-size: 13px; }
+.total-inventario { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 18px 22px; background: #f8fbfa; border-top: 1px solid #e9efee; font-size: 12px; color: #74878b; }
+.total-inventario strong { font: 800 16px Manrope, sans-serif; color: #0f766e; }
+.formulario { padding: 22px; }
+.formulario h2 { margin-bottom: 22px; }
+.formulario label { display: block; font-size: 12px; color: #496168; font-weight: 700; margin-bottom: 15px; }
+.formulario input, .formulario select { width: 100%; margin-top: 7px; border: 1px solid #dfe9e7; border-radius: 9px; padding: 11px 12px; outline: none; background: #fbfcfc; font-size: 13px; color: #263f46; }
+.formulario input:focus, .formulario select:focus { border-color: #3eaa9a; box-shadow: 0 0 0 3px #d9f4ed; }
+.acciones-form { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 5px; }
+.aviso { margin: 0 0 16px; padding: 12px 15px; border-radius: 10px; font-size: 13px; }
+.exito { background: #e0f6e9; color: #176c45; } .error { background: #fff0ef; color: #a73834; }
+footer { text-align: center; padding: 30px 0 25px; color: #91a0a3; font-size: 11px; }
+@media (max-width: 1000px) { .contenido { grid-template-columns: 1fr; } .formulario-panel { order: -1; } }
+@media (max-width: 700px) {
+  .barra-superior { padding: 0 5%; min-height: 70px; }
+  .contenedor { width: 92%; margin-top: 25px; }
+  .estadisticas { grid-template-columns: 1fr; gap: 10px; }
+  .tarjeta-estadistica { padding: 15px 18px; }
+  .icono-grande { width: 50px; height: 50px; }
+  .bienvenida { gap: 10px; }
+  .panel-cabecera { align-items: flex-start; flex-direction: column; }
+  .total-inventario { align-items: flex-start; flex-direction: column; }
+}
